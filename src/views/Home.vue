@@ -1,9 +1,21 @@
 <template>
-  <div class="max-w-7xl mx-auto px-4 sm:px-6">
-    Home
+  <div>
+    <Hero />
+    <WorkCard />
   </div>
 </template>
 
-<script></script>
+<script>
+import Hero from "@/components/Home/HeroWsub.vue";
+import WorkCard from "@/components/common/VhiclTypeCard.vue";
+
+export default {
+  name: "Home",
+  components: {
+    Hero,
+    WorkCard,
+  },
+};
+</script>
 
 <style scoped></style>
