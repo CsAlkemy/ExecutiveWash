@@ -1,8 +1,7 @@
 <template>
   <Navbar />
-  <div class="bg-gray-100">
-    <router-view />
-  </div>
+  <router-view />
+  <Footer />
   <ContactFooter class="inline sm:hidden" />
 </template>
 
@@ -10,7 +9,8 @@
 <script>
 import ContactFooter from "@/components/layout/ContactFooter.vue";
 import Navbar from "@/components/layout/Navbar.vue";
+import Footer from "@/components/layout/Footer.vue";
 export default {
-  components: { ContactFooter, Navbar },
+  components: { ContactFooter, Navbar, Footer },
 };
 </script>

@@ -1,5 +1,5 @@
 <template>
   <div class="contact">
-    Contact
+    Hello World
   </div>
 </template>

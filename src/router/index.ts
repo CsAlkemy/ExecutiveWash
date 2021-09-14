@@ -33,4 +33,8 @@ const router = createRouter({
   routes,
 });
 
+router.afterEach((to, from) => {
+  window.document.title = `${String(to.name)} | ${process.env.VUE_APP_TITLE}`;
+});
+
 export default router;
