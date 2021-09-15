@@ -13,10 +13,11 @@
           <h1 :class="data.text" class="text-4xl font-bold mb-5">
             {{ data.name }}
           </h1>
-          <p :class="data.text" class=" text-7xl font-bold tracking-tight">
-            <sup class="text-3xl font-semibold">$</sup>{{ data.Amounts
-            }}<sup class="text-3xl font-semibold">/up</sup>
-          </p>
+          <div :class="data.text" class="flex my-4">
+            <p class="text-3xl font-medium">$</p>
+            <h1 class="text-7xl font-bold">{{ data.Amounts }}</h1>
+            <p class="text-3xl font-medium">/up</p>
+          </div>
           <img
             :src="data.Img"
             alt="car"
