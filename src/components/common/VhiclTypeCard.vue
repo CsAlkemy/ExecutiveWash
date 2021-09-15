@@ -4,59 +4,28 @@
       <div
         class="grid grid-cols-1 sm:grid-cols-3 gap-x-0 md:gap-x-5 gap-y-5 sm:gap-y-2 lg:gap-x-16"
       >
-        <div class="bg-white rounded-3xl px-6 py-9 shadow-lg">
-          <h1 class="text-4xl font-bold">Car</h1>
-          <p class="text-7xl font-bold tracking-tight">
-            <sup class="text-3xl font-semibold">$</sup>20<sup
-              class="text-3xl font-semibold"
-              >/up</sup
-            >
+        <div
+          v-for="data in cardData"
+          :key="data.name"
+          :class="data.color"
+          class="bg-white rounded-3xl justify-center px-6 py-9 shadow-lg w-full sm:max-w-xs cursor-pointer transform duration-500 hover:-translate-y-1"
+        >
+          <h1 :class="data.text" class="text-4xl font-bold mb-5">
+            {{ data.name }}
+          </h1>
+          <p :class="data.text" class=" text-7xl font-bold tracking-tight">
+            <sup class="text-3xl font-semibold">$</sup>{{ data.Amounts
+            }}<sup class="text-3xl font-semibold">/up</sup>
           </p>
-          <img :src="Car" alt="car" class="mb-14" />
+          <img
+            :src="data.Img"
+            alt="car"
+            class="object-contain w-full h-32 max-h-40 mb-9"
+          />
           <div class="grid justify-center">
             <router-link
               to="appointment"
-              class=" inline-flex  bg-purple-500 hover:bg-green-400 text-white p-3 px-4 md:px-7 text-lg font-bold rounded-md"
-            >
-              <span>Book Now</span>
-              <ChevronRightIcon class="h-5 w-5 my-auto" />
-            </router-link>
-          </div>
-        </div>
-
-        <div class="bg-gray-900  rounded-3xl px-6 py-9">
-          <h1 class="text-4xl text-white font-bold">Suv</h1>
-          <p class="text-7xl font-bold text-white tracking-tight">
-            <sup class="text-3xl font-semibold">$</sup>20<sup
-              class="text-3xl font-semibold"
-              >/up</sup
-            >
-          </p>
-          <img :src="Car" alt="car" class="mb-14" />
-          <div class="grid justify-center">
-            <router-link
-              to="appointment"
-              class=" inline-flex  bg-purple-500 hover:bg-green-400 text-white p-3 px-4 md:px-7 text-lg font-bold rounded-md"
-            >
-              <span>Book Now</span>
-              <ChevronRightIcon class="h-5 w-5 my-auto" />
-            </router-link>
-          </div>
-        </div>
-
-        <div class="bg-white rounded-3xl px-6 py-9">
-          <h1 class="text-4xl font-bold">Truck</h1>
-          <p class="text-7xl font-bold tracking-tight">
-            <sup class="text-3xl font-semibold">$</sup>20<sup
-              class="text-3xl font-semibold"
-              >/up</sup
-            >
-          </p>
-          <img :src="Car" alt="car" class="mb-14" />
-          <div class="grid justify-center">
-            <router-link
-              to="appointment"
-              class=" inline-flex  bg-purple-500 hover:bg-green-400 text-white p-3 px-4 md:px-7 text-lg font-bold rounded-md"
+              class=" inline-flex bg-purple-500 hover:bg-green-400 text-white p-3 px-4 md:px-7 text-lg font-bold rounded-md"
             >
               <span>Book Now</span>
               <ChevronRightIcon class="h-5 w-5 my-auto" />
@@ -69,25 +38,30 @@
 </template>
 <script>
 import Car from "@/assets/images/car.png";
+import Suv from "@/assets/images/suv.png";
+import Truck from "@/assets/images/truck.png";
 import { ChevronRightIcon } from "@heroicons/vue/outline";
 const cardData = [
   {
     name: "Car",
     Amounts: 20,
-    Img: "Image",
-    isFeatured: false,
+    Img: Car,
+    color: "bg-white",
+    text: "text-black",
   },
   {
     name: "Suv",
-    Amounts: 150,
-    Img: "Image",
-    isFeatured: true,
+    Amounts: 20,
+    Img: Suv,
+    color: "bg-gray-900 place-self-center",
+    text: "text-white",
   },
   {
     name: "Car",
-    Amounts: 20,
-    Img: "Image",
-    isFeatured: false,
+    Amounts: 25,
+    Img: Truck,
+    color: "bg-white place-self-end",
+    text: "text-black",
   },
 ];
 export default {
