@@ -6,7 +6,7 @@
       v-for="item in data"
       :key="item.title"
       :class="item.bg"
-      class="grid grid-rows-3 bg-white hover:bg-gray-900 hover:text-white cursor-pointer transform duration-300 hover:-translate-y-3 rounded-md shadow-lg"
+      class="grid grid-rows-3 bg-white hover:bg-gray-900 hover:text-white cursor-pointer transform-none md:transform duration-300 hover:-translate-y-1 rounded-md shadow-lg"
     >
       <div class="row-span-1">
         <img

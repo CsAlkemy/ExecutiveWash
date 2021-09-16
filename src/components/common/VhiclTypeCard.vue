@@ -8,7 +8,7 @@
           v-for="data in cardData"
           :key="data.name"
           :class="data.color"
-          class="bg-white rounded-3xl justify-center px-6 py-9 shadow-lg w-full sm:max-w-xs cursor-pointer transform duration-500 hover:-translate-y-1"
+          class="bg-white rounded-3xl justify-center px-6 py-9 shadow-lg w-full sm:max-w-xs cursor-pointer transition-transform duration-500 hover:-translate-y-1"
         >
           <h1 :class="data.text" class="text-4xl font-bold mb-5">
             {{ data.name }}

@@ -1,15 +1,9 @@
 <template>
   <div class="max-w-7xl mx-auto px-4 sm:px-6">
     <div
-      class="my-8 sm:my-11 py-24 sm:py-32 text-white rounded-2xl overflow-hidden relative"
+      class="my-8 sm:my-11 py-24 sm:py-32 text-white rounded-2xl overflow-hidden bg-gray-900 "
     >
-      <img
-        class="absolute inset-0 h-full w-full object-cover"
-        :src="logo"
-        alt="banner"
-      />
-      <div class="absolute inset-0 bg-gray-900 bg-opacity-75"></div>
-      <div class="flex h-full items-center justify-center relative">
+      <div class="flex h-full items-center justify-center">
         <div>
           <h1
             class="text-5xl md:text-6xl  uppercase tracking-tight text-center font-semibold"
@@ -24,8 +18,8 @@
           <p
             class="text-xl font-normal tracking-wider text-center mt-9 capitalize"
           >
-            we are the best car wash on pembroke pines. <br />
-            we know what you want from a car wash
+            we are the best car wash on pembroke pines. we know what you want
+            from a car wash
           </p>
           <div class="flex gap-4 justify-center mt-9">
             <router-link

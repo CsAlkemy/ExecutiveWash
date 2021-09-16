@@ -24,7 +24,7 @@
             >
           </div>
           <div
-            class="grid grid-rows-3 place-items-start bg-black rounded-md lg:rounded-none opacity-95 lg:bg-gray-900 p-3  mb-10 gap-y-4"
+            class="grid grid-rows-3 place-items-start bg-black rounded-md lg:rounded-none opacity-95 lg:bg-gray-900 p-3  mb-10 gap-y-0 md:gap-y-4"
           >
             <div class="inline-flex gap-x-4">
               <ClockIcon class="h-9 w-9" />
