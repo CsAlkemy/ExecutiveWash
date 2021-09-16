@@ -21,7 +21,9 @@
           >
             DETAILED <span class="text-purple-500">CAR WASH</span>
           </h1>
-          <p class="text-lg font-normal tracking-wider text-center mt-9">
+          <p
+            class="text-xl font-normal tracking-wider text-center mt-9 capitalize"
+          >
             we are the best car wash on pembroke pines. <br />
             we know what you want from a car wash
           </p>

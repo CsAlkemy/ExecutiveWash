@@ -6,6 +6,7 @@
     <ExecPrice />
     <Cta />
     <Feedback />
+    <NewsLetter />
   </div>
 </template>
 
@@ -16,6 +17,7 @@ import FeaturCard from "@/components/common/FeatureCard.vue";
 import ExecPrice from "@/components/Home/PricingExe.vue";
 import Cta from "@/components/common/Cta.vue";
 import Feedback from "@/components/common/TestimonialCard.vue";
+import NewsLetter from "@/components/common/NewsLetter.vue";
 
 export default {
   name: "Home",
@@ -26,6 +28,7 @@ export default {
     ExecPrice,
     Cta,
     Feedback,
+    NewsLetter,
   },
 };
 </script>

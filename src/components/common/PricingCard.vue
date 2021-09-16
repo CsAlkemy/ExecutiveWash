@@ -45,7 +45,7 @@
       </div>
       <router-link
         to="appointment"
-        class=" p-2 bg-green-500 text-white place-items-center mb-3 mx-5 text-center rounded-md"
+        class=" p-2 bg-green-500 hover:bg-purple-500 text-white place-items-center mb-3 mx-5 text-center rounded-md"
       >
         Reserve Now
       </router-link>

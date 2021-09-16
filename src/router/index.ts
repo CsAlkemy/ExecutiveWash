@@ -34,7 +34,7 @@ const router = createRouter({
 });
 
 router.afterEach((to, from) => {
-  window.document.title = `${String(to.name)} | ${process.env.VUE_APP_TITLE}`;
+  window.document.title = `${String(to.name)} | Executive Car Wash & Details`;
 });
 
 export default router;

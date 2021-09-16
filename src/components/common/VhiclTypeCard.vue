@@ -26,7 +26,7 @@
           <div class="grid justify-center">
             <router-link
               to="appointment"
-              class=" inline-flex bg-purple-500 hover:bg-green-400 text-white p-3 px-4 md:px-7 text-lg font-bold rounded-md"
+              class=" inline-flex bg-purple-500 hover:bg-green-400 text-white p-2 px-1 md:px-7 text-lg font-bold rounded-md"
             >
               <span>Book Now</span>
               <ChevronRightIcon class="h-5 w-5 my-auto" />
