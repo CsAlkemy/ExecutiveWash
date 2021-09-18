@@ -70,17 +70,21 @@
             Fill out the form and we will let you know about special offers,
             coupons ann news.
           </p>
-          <div class="flex gap-x-2 my-5 justify-evenly sm:justify-start">
-            <input
-              type="text"
-              placeholder="Enter your email"
-              class="p-2 text-black placeholder-gray-600 rounded-sm"
-            />
-            <button
-              class="bg-purple-500 text-white p-2 rounded-sm hover:bg-green-300 font-semibold text-base hover:text-black"
-            >
-              Subscribe
-            </button>
+          <div
+            class="grid grid-cols-1 gap-x-2 my-5 justify-evenly sm:justify-start"
+          >
+            <div class="col-span-1">
+              <input
+                type="text"
+                placeholder="Enter your email"
+                class="p-2 text-black placeholder-gray-600 rounded-sm mr-3"
+              />
+              <button
+                class="bg-green-500 text-white p-2 rounded-sm hover:bg-purple-500 font-medium text-base"
+              >
+                Subscribe
+              </button>
+            </div>
           </div>
         </div>
       </div>

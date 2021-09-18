@@ -8,7 +8,7 @@
           v-for="data in cardData"
           :key="data.name"
           :class="data.color"
-          class="bg-white rounded-3xl justify-center px-6 py-9 shadow-lg w-full sm:max-w-xs cursor-pointer transition-transform duration-500 hover:-translate-y-1"
+          class="bg-white rounded-3xl justify-center px-6 py-9 shadow-lg w-full sm:max-w-xs cursor-pointer transform-none md:transform duration-500 hover:-translate-y-1"
         >
           <h1 :class="data.text" class="text-4xl font-bold mb-5">
             {{ data.name }}
@@ -26,7 +26,7 @@
           <div class="grid justify-center">
             <router-link
               to="appointment"
-              class=" inline-flex bg-purple-500 hover:bg-green-400 text-white p-2 px-1 md:px-7 text-lg font-bold rounded-md"
+              class=" inline-flex bg-green-500 hover:bg-purple-500 text-white p-2 px-1 md:px-7 text-lg font-bold rounded-md"
             >
               <span>Book Now</span>
               <ChevronRightIcon class="h-5 w-5 my-auto" />

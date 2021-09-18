@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.bgImageGallery {
+  background-image: url("../assets/images/bgTwo.png");
+  background-repeat: no-repeat;
+  object-fit: contain;
+  background-position: center;
+}
+
+.bgImageHome {
+  background-image: url("../assets/images/bgOne.png");
+  background-repeat: no-repeat;
+  object-fit: contain;
+  background-position: center;
+}

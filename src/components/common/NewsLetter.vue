@@ -17,7 +17,7 @@
           class="col-span-2 p-2 placeholder-gray-600  rounded-md text-black "
         />
         <button
-          class="col-span-1 p-2 bg-purple-500 text-white text-lg font-medium rounded-md hover:bg-green-500 hover:text-black"
+          class="col-span-1 p-2 bg-green-500 text-white text-lg font-medium rounded-md hover:bg-purple-500"
         >
           Subscribe
         </button>

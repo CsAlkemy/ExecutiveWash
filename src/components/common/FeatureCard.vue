@@ -11,7 +11,7 @@
           <div
             v-for="item in features"
             :key="item.title"
-            class="bg-white cursor-pointer transition-transform duration-500 hover:-translate-y-1 shadow-lg"
+            class="bg-white cursor-pointer transform-none md:transform duration-500 hover:-translate-y-1 shadow-lg"
           >
             <div class="grid grid-cols-5">
               <div class="col-span-2">

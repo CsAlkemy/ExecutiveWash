@@ -28,7 +28,7 @@
             :key="item.name"
             :to="item.href"
             exact
-            exact-active-class="text-purple-500"
+            exact-active-class="text-green-500"
             class="text-base font-medium text-gray-500"
             >{{ item.name }}</router-link
           >
@@ -38,7 +38,7 @@
             to="appointment"
             exact
             exact-active-class="text-white bg-black"
-            class="bg-purple-600 text-white ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium"
+            class="bg-green-500 hover:bg-purple-500 text-white ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium"
           >
             Appointment
           </router-link>
@@ -93,7 +93,7 @@
                 >
                   <component
                     :is="item.icon"
-                    class="flex-shrink-0 h-6 w-6 text-purple-600"
+                    class="flex-shrink-0 h-6 w-6 text-green-500"
                     aria-hidden="true"
                   />
                   <span class="ml-3 text-base font-medium text-gray-900">
@@ -109,7 +109,7 @@
                 to="appointment"
                 exact
                 exact-active-class="bg-black"
-                class="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-purple-600 hover:bg-black"
+                class="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-green-500 hover:bg-purple-500"
               >
                 Appointment
               </router-link>
