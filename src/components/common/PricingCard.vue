@@ -1,7 +1,5 @@
 <template>
-  <div
-    class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-7  mb-14"
-  >
+  <div :class="Gridclass" class=" gap-7  mb-14">
     <div
       v-for="item in data"
       :key="item.title"
@@ -60,6 +58,9 @@ export default {
   props: {
     data: {
       cardData: Object,
+    },
+    Gridclass: {
+      Gridclass: String,
     },
     img: {
       type: String,

@@ -1,10 +1,14 @@
 <template>
-  <div>
-    <Hero :data="HeroData" />
-  </div>
+  <Hero :data="HeroData" />
+  <LightBox />
+  <Cta />
+  <NewsLetter />
 </template>
 <script>
 import Hero from "@/components/common/Hero.vue";
+import LightBox from "@/components/common/GalleryLightBoxC.vue";
+import Cta from "@/components/common/Cta.vue";
+import NewsLetter from "@/components/common/NewsLetter.vue";
 
 const HeroData = {
   titleOne: "Our Team Makes",
@@ -13,12 +17,13 @@ const HeroData = {
   bgImage: "bgImageGallery",
 };
 
-console.log(HeroData);
-
 export default {
   name: "Gallery",
   components: {
     Hero,
+    Cta,
+    LightBox,
+    NewsLetter,
   },
 
   data() {

@@ -2,9 +2,11 @@
   <div class="services">
     <Hero :data="HeroData" />
     <Work />
-    <ServiceOne :data="PricingTitleData[0]" :packages="priceDataOne" />
+    <DetailedServices />
+    <Banner class=" mt-4 md:mt-10" />
+    <Service :data="PricingTitleData[0]" :packages="priceDataOne" />
     <Cta />
-    <ServiceTwo :data="PricingTitleData[1]" :packages="priceDataOne" />
+    <Service :data="PricingTitleData[1]" :packages="priceDataTwo" />
     <NewsLetter />
   </div>
 </template>
@@ -12,10 +14,11 @@
 <script>
 import Hero from "@/components/common/Hero.vue";
 import Work from "@/components/common/VhiclTypeCard.vue";
-import ServiceOne from "@/components/Services/PricingParent.vue";
+import DetailedServices from "@/components/Services/DetailedServices.vue";
+import Service from "@/components/common/PricingParent.vue";
 import Cta from "@/components/common/Cta.vue";
-import ServiceTwo from "@/components/Services/PricingParent.vue";
 import NewsLetter from "@/components/common/NewsLetter.vue";
+import Banner from "@/components/Home/Banner.vue";
 
 //Page Data
 const HeroData = {
@@ -27,9 +30,11 @@ const HeroData = {
 const PricingTitleData = [
   {
     title: "Wash Packages",
+    class: "grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4",
   },
   {
     title: "Our Special Services",
+    class: "grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-5 md:gap-x-9 ",
   },
 ];
 
@@ -137,6 +142,72 @@ const priceDataOne = [
   },
 ];
 
+const priceDataTwo = [
+  {
+    title: "SUPER SHINE POLISH",
+    price: 150,
+    img: require("@/assets/images/erod3.jpg"),
+    link: "",
+    includes: [
+      { inc: "light Claybar", id: 1 },
+      { inc: "Highspeed 3m Polish", id: 2 },
+      { inc: "Carnuba Wax", id: 3 },
+    ],
+    isPopular: true,
+  },
+  {
+    title: "SWIRL REMOVAL SERVICE",
+    price: 200,
+    img: require("@/assets/images/carOne.jpg"),
+    link: "",
+    includes: [
+      { inc: "3m Swirl removal", id: 1 },
+      { inc: "3m Polish", id: 2 },
+      { inc: "Carnuba Wax", id: 3 },
+      { inc: "Tire Shine", id: 4 },
+    ],
+    isPopular: true,
+    bg: "bg-gray-900 text-white",
+  },
+  {
+    title: "WET SAND",
+    price: 250,
+    img: require("@/assets/images/erod7.jpg"),
+    link: "",
+    includes: [
+      { inc: "Wetsand", id: 1 },
+      { inc: "Compound", id: 1 },
+      { inc: "Swirl Removal", id: 2 },
+      { inc: "Polish", id: 3 },
+    ],
+    isPopular: false,
+  },
+  {
+    title: "COMPOUND",
+    price: 200,
+    img: require("@/assets/images/erod2.jpg"),
+    link: "",
+    includes: [{ inc: "Compound", id: 1 }],
+    isPopular: false,
+  },
+  {
+    title: "HEADLIGHT RESTORATION",
+    price: 80,
+    img: require("@/assets/images/machine wash.jpg"),
+    link: "",
+    includes: [{ inc: "Headlight Restoration", id: 1 }],
+    isPopular: false,
+  },
+
+  {
+    title: "SCRATCH REMOVAL",
+    price: 40,
+    img: require("@/assets/images/vip.jpg"),
+    link: "",
+    includes: [{ inc: "Per Scratch", id: 1 }],
+    isPopular: false,
+  },
+];
 //Function
 
 export default {
@@ -144,16 +215,18 @@ export default {
   components: {
     Hero,
     Work,
-    ServiceOne,
+    Service,
     Cta,
-    ServiceTwo,
     NewsLetter,
+    DetailedServices,
+    Banner,
   },
   data() {
     return {
       HeroData,
       PricingTitleData,
       priceDataOne,
+      priceDataTwo,
     };
   },
   setup() {},

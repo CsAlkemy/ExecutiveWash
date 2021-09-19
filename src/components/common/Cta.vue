@@ -35,7 +35,10 @@
                 </p>
               </div>
             </div>
-            <a href="tel:(954) 534-9323" class="inline-flex gap-x-4">
+            <a
+              href="tel:(954) 534-9323"
+              class="inline-flex gap-x-4 hover:text-green-500"
+            >
               <PhoneOutgoingIcon class="h-9 w-9" />
               <div>
                 <h1 class="text-xl font-semibold uppercase">Call us 24/7</h1>

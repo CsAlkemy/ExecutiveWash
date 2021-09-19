@@ -28,19 +28,19 @@
             Sitemap
           </h1>
           <ul class="flex-col gap-y-2">
-            <li class="hover:text-blue-400">
+            <li class="hover:text-green-500">
               <routerLink to="/">Home</routerLink>
             </li>
-            <li class="hover:text-blue-400">
+            <li class="hover:text-green-500">
               <routerLink to="services">Services</routerLink>
             </li>
-            <li class="hover:text-blue-400">
+            <li class="hover:text-green-500">
               <routerLink to="gallery">Gallery</routerLink>
             </li>
-            <li class="hover:text-blue-400">
+            <li class="hover:text-green-500">
               <routerLink to="contact">Contact Us</routerLink>
             </li>
-            <li class="hover:text-blue-400">
+            <li class="hover:text-green-500">
               <routerLink to="appointment">Appointment</routerLink>
             </li>
           </ul>
