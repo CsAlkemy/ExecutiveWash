@@ -135,6 +135,7 @@ import {
   DeviceMobileIcon,
   MenuIcon,
   XIcon,
+  IdentificationIcon,
 } from "@heroicons/vue/outline";
 import { ChevronDownIcon } from "@heroicons/vue/solid";
 
@@ -158,6 +159,11 @@ const navItems = [
     name: "Contact Us",
     href: "contact",
     icon: DeviceMobileIcon,
+  },
+  {
+    name: "About Us",
+    href: "about",
+    icon: IdentificationIcon,
   },
 ];
 

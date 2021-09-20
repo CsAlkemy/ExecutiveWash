@@ -1,7 +1,8 @@
 <template>
   <div>
-    <Location />
+    <ContactCard />
     <ContactForm />
+    <Location />
     <Cta />
     <Newsletter />
   </div>
