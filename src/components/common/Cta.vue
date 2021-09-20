@@ -19,7 +19,7 @@
             </h1>
             <router-link
               to="contact"
-              class="p-2 bg-white hover:bg-green-500 mt-5 text-black hover:text-white rounded-sm shadow-lg"
+              class="p-3 px-7 text-lg font-bold bg-white hover:bg-green-500 mt-5 text-black hover:text-white rounded-sm shadow-lg"
               >Contact Us</router-link
             >
           </div>
