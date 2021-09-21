@@ -2,7 +2,7 @@
   <div class="max-w-7xl mx-auto px-4 sm:px-6">
     <div
       :class="data.bgImage"
-      class="my-8 sm:my-11 py-24 sm:py-32 text-white rounded-2xl overflow-hidden bg-gray-900"
+      class="my-8 sm:my-11 py-24 sm:py-28 text-white rounded-2xl overflow-hidden bg-gray-900"
     >
       <div class="flex h-full items-center justify-center">
         <div>
@@ -18,7 +18,7 @@
             <span class="text-green-300">{{ data.titleTwo[1] }}</span>
           </h1>
           <p
-            class="text-xl font-normal tracking-wider text-center mt-9 capitalize px-2 md:px-0"
+            class="text-xl font-normal tracking-wider text-center mt-9 capitalize px-3 md:px-24 lg:px-48"
           >
             {{ data.subtitle }}
           </p>

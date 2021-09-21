@@ -26,7 +26,7 @@ const HeroData = {
   titleTwo: ["DETAILED", "CAR WASH"],
   subtitle:
     "we are the best car wash on pembroke pines. we know what you want from a car wash",
-  bgImage: "bgImageHome",
+  bgImage: "bgImageHome object-cover",
 };
 
 const PricingTitleData = [

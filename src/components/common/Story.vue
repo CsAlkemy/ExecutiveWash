@@ -3,7 +3,7 @@
     <div class="mt-16 mb-12">
       <h1 class="text-5xl font-extrabold mb-12 ">Our Story</h1>
     </div>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 gap-x-5 lg:gap-x-10">
+    <div class="grid justify-items-end grid-cols-1 md:grid-cols-3 gap-y-5">
       <div class="col-span-2">
         <div class="grid grid-rows-1 gap-y-5">
           <div
@@ -16,9 +16,9 @@
           </div>
         </div>
       </div>
-      <div class=" col-span-1 justify-self-center hidden md:contents">
+      <div class=" col-span-1  hidden md:contents">
         <img
-          class=" object-cover h-full w-auto rounded-2xl"
+          class=" object-cover h-full w-80 rounded-2xl"
           :src="Img"
           alt="Company Data"
         />

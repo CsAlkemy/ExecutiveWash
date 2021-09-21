@@ -156,7 +156,7 @@ const navItems = [
     icon: PhotographIcon,
   },
   {
-    name: "Contact Us",
+    name: "Contact",
     href: "contact",
     icon: DeviceMobileIcon,
   },
