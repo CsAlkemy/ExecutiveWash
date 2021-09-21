@@ -34,7 +34,7 @@ const imgSrc = [
   {
     id: 0,
     title: "Executive Wash Poster",
-    src: require("@/assets/images/poster.png"),
+    src: require("@/assets/images/poster.jpg"),
   },
   {
     id: 1,

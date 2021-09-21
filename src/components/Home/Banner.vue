@@ -8,7 +8,7 @@ export default {
   name: "Banner",
   data() {
     return {
-      Img: require("@/assets/images/banner.png"),
+      Img: require("@/assets/images/banner.jpg"),
     };
   },
 };
