@@ -2,15 +2,8 @@
   <div class="max-w-7xl mx-auto px-4 sm:px-6 my-20">
     <div class="grid grid-cols-1  lg:grid-cols-3  rounded-2xl bg-white">
       <div
-        class=" grid grid-rows-1 bg-gray-900 rounded-2xl m-0 md:m-2 mr-0 p-5 text-white relative"
+        class=" grid grid-rows-1 bg-gray-900 bg-littleDot bg-no-repeat bg-right-bottom bg-blend-lighten rounded-2xl m-0 md:m-2 mr-0 p-5 text-white"
       >
-        <div class="absolute right-0 bottom-0 bg-blend-soft-light mt-28">
-          <img
-            :src="Img"
-            class="rounded-2xl max-h-56 object-cover"
-            alt="little dot"
-          />
-        </div>
         <h1 class="text-5xl font-bold tracking-tighter">Contact Us</h1>
         <p class="text-base font-normal tracking-wider text-justify my-10">
           Don't Want to fillup forms ? <br />
@@ -64,6 +57,7 @@
                 class=" w-full p-2 border-2 border-green-500 rounded-md"
                 id="email"
                 type="email"
+                required
                 placeholder="jhone.doe@gmail.com"
               />
             </div>

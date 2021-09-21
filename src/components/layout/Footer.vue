@@ -41,6 +41,9 @@
               <routerLink to="contact">Contact Us</routerLink>
             </li>
             <li class="hover:text-green-500">
+              <routerLink to="about">About Us</routerLink>
+            </li>
+            <li class="hover:text-green-500">
               <routerLink to="appointment">Appointment</routerLink>
             </li>
           </ul>

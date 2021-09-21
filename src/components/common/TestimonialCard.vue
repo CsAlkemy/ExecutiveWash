@@ -2,9 +2,9 @@
   <div class="max-w-7xl mx-auto px-4 sm:px-6 pt-8 pb-14">
     <div class="text-black my-12">
       <h1 class="text-2xl font-medium tracking-tight">
-        It's Time to Check Our
+        Our Customer
       </h1>
-      <h1 class="text-4xl font-extrabold mb-12">Featured Work</h1>
+      <h1 class="text-4xl font-extrabold mb-12">Reviews</h1>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
         <div
           v-for="item in data"

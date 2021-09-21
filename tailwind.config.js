@@ -7,6 +7,8 @@ module.exports = {
         email: `url('../assets/images/emaill.jpg')`,
         phone: `url('../assets/images/phone.jpg')`,
         location: `url('../assets/images/map.jpg')`,
+        bigCar: `url('../assets/images/suvcta.png')`,
+        littleDot: `url('../assets/images/contact.png')`,
       },
     },
   },

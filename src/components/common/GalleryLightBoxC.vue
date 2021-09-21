@@ -50,7 +50,7 @@ const imgSrc = [
     id: 3,
     title: "Executive Wash Hand Wash",
     src: require("@/assets/images/erod2.jpg"),
-    class: "col-span-2",
+    class: "col-span-1 md:col-span-2",
   },
   {
     id: 4,
@@ -66,7 +66,7 @@ const imgSrc = [
     id: 6,
     title: "Executive Wash",
     src: require("@/assets/images/erod3.jpg"),
-    class: "col-span-2",
+    class: "col-span-1 md:col-span-2",
   },
 ];
 export default {

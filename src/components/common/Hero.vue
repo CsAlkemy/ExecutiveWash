@@ -12,7 +12,7 @@
             {{ data.titleOne }}
           </h1>
           <h1
-            class="text-5xl md:text-6xl  uppercase tracking-tight text-center font-semibold mt-5"
+            class="text-5xl md:text-6xl  uppercase tracking-tight text-center font-semibold mt-0 md:mt-5"
           >
             {{ data.titleTwo[0] }}
             <span class="text-green-300">{{ data.titleTwo[1] }}</span>
@@ -46,10 +46,6 @@ export default {
   props: {
     data: {
       HeroData: Object,
-    },
-    logo: {
-      type: String,
-      default: require("../../assets/images/heroBanner.jpg"),
     },
   },
 };

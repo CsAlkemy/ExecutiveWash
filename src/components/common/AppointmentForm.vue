@@ -15,7 +15,7 @@
         />
       </div>
       <div
-        class=" bg-white text-black px-5 py-1 rounded-lg md:rounded-none md:rounded-r-lg "
+        class=" bg-white shadow-lg text-black px-5 py-1 rounded-lg md:rounded-none md:rounded-r-lg "
       >
         <h1 class="text-center  text-xl font-semibold mt-5 ">
           Appointment Form

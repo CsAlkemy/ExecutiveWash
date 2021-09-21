@@ -1,9 +1,8 @@
 <template>
-  <div class="bg-gray-900 py-20 mt-11 text-white">
-    <div class=" bg-gray-900 relative pb-14">
-      <img :src="img" alt="" class="float-right object-scale-down" />
+  <div class="bg-gray-900  mt-11 text-white">
+    <div class=" bg-blend-multiply bg-no-repeat bg-bigCar bg-right py-20">
       <div class="clear-right"></div>
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 absolute inset-0">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6">
         <div
           class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-4 mt-0 lg:mt-11"
         >
@@ -19,7 +18,7 @@
             </h1>
             <router-link
               to="contact"
-              class="p-3 px-7 text-lg font-bold bg-white hover:bg-green-500 mt-5 text-black hover:text-white rounded-sm shadow-lg"
+              class="p-3 px-7 text-lg font-semibold bg-white hover:bg-green-500 mt-5 text-black hover:text-white rounded-sm shadow-lg"
               >Contact Us</router-link
             >
           </div>
@@ -39,7 +38,7 @@
               href="tel:(954) 534-9323"
               class="inline-flex gap-x-4 hover:text-green-500"
             >
-              <PhoneOutgoingIcon class="h-9 w-9" />
+              <PhoneIcon class="h-9 w-9" />
               <div>
                 <h1 class="text-xl font-semibold uppercase">Call us 24/7</h1>
                 <a href="tel:(954) 534-9323" class="text-base font-normal">
@@ -64,14 +63,14 @@
 </template>
 <script>
 import Car from "@/assets/images/suvcta.png";
-import { ClockIcon, MapIcon, PhoneOutgoingIcon } from "@heroicons/vue/solid";
+import { ClockIcon, MapIcon, PhoneIcon } from "@heroicons/vue/solid";
 
 export default {
   name: "Cta",
   components: {
     ClockIcon,
     MapIcon,
-    PhoneOutgoingIcon,
+    PhoneIcon,
   },
   date() {
     return {

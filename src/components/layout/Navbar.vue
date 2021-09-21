@@ -8,9 +8,9 @@
           <router-link to="/">
             <span class="sr-only">Workflow</span>
             <img
-              class="h-8 w-auto sm:h-10"
-              src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
-              alt=""
+              class="h-12 rounded-xl w-auto sm:h-14"
+              :src="Image"
+              alt="logo"
             />
           </router-link>
         </div>
@@ -37,8 +37,8 @@
           <router-link
             to="appointment"
             exact
-            exact-active-class="text-white bg-black"
-            class="bg-green-500 hover:bg-purple-500 text-white ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium"
+            exact-active-class="bg-purple-500"
+            class="bg-green-500 hover:shadow-lg hover:bg-gray-900  text-white ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium"
           >
             Appointment
           </router-link>
@@ -65,11 +65,7 @@
             <div class="flex items-center justify-between">
               <div>
                 <router-link to="/">
-                  <img
-                    class="h-8 w-auto"
-                    src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
-                    alt="Workflow"
-                  />
+                  <img class="h-12 w-auto" :src="Image" alt="Workflow" />
                 </router-link>
               </div>
               <div class="-mr-2">
@@ -122,6 +118,8 @@
 </template>
 
 <script>
+import Image from "@/assets/images/logo.png";
+
 import {
   Popover,
   PopoverButton,
@@ -180,6 +178,7 @@ export default {
   setup() {
     return {
       navItems,
+      Image,
     };
   },
 };
