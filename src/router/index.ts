@@ -38,12 +38,16 @@ const routes: Array<RouteRecordRaw> = [
 ];
 
 const router = createRouter({
-  history: createWebHistory(process.env.BASE_URL),
+  history: createWebHistory(),
   routes,
-});
-
-router.afterEach((to, from, savedPosition) => {
-  return { x: 0, y: 0 };
+  scrollBehavior(to, from, savedPosition) {
+    return (
+      savedPosition ||
+      new Promise((resolve) => {
+        setTimeout(() => resolve({ top: 0, behavior: "smooth" }), 100);
+      })
+    );
+  },
 });
 
 router.afterEach((to, from) => {

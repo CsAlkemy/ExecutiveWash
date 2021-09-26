@@ -55,6 +55,7 @@
       leave-to-class="opacity-0 scale-95"
     >
       <PopoverPanel
+        v-slot="{ close }"
         focus
         class="absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden"
       >
@@ -80,6 +81,7 @@
             <div class="mt-6">
               <nav class="grid gap-y-8">
                 <router-link
+                  @click="accept(close)"
                   v-for="item in navItems"
                   :key="item.name"
                   :to="item.href"
@@ -102,6 +104,7 @@
           <div class="py-6 px-5 space-y-6">
             <div>
               <router-link
+                @click="accept(close)"
                 to="appointment"
                 exact
                 exact-active-class="bg-black"
@@ -119,7 +122,6 @@
 
 <script>
 import Image from "@/assets/images/logo.png";
-
 import {
   Popover,
   PopoverButton,
@@ -175,12 +177,20 @@ export default {
     MenuIcon,
     XIcon,
   },
+
   setup() {
     return {
       navItems,
       Image,
+      accept: async (close) => {
+        close();
+      },
     };
   },
+  methods: {
+    closeNavMobile() {
+      this.$emit("closeNav");
+    },
+  },
 };
-console.log(process.env.APP_TITLE);
 </script>
