@@ -5,9 +5,9 @@
         class=" grid grid-rows-1 bg-gray-900 bg-littleDot bg-no-repeat bg-right-bottom bg-blend-lighten rounded-2xl m-0 md:m-2 mr-0 p-5 text-white"
       >
         <h1 class="text-5xl font-bold tracking-tighter">Contact Us</h1>
-        <p class="text-base font-normal tracking-wider text-justify my-10">
+        <p class="text-base font-medium tracking-wider text-justify my-10">
           Don't Want to fillup forms ? <br />
-          Just ping us on message or give us a call. We will handle the rest.
+          Just give us a call! We will handle the rest.
         </p>
         <div class=" mb-40 ">
           <div class="flex gap-x-3 mb-7">
@@ -19,10 +19,8 @@
 
           <div class="flex gap-x-3 mb-7">
             <MailOpenIcon class="h-7 w-7" />
-            <a
-              class="text-xl font-medium"
-              href="mailto:info@executivewashpines.com"
-              >info@executivewashpines.com</a
+            <a class="text-xl font-medium" href="mailto:info@execwash.com"
+              >Info@execwash.com</a
             >
           </div>
 

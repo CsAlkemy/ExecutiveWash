@@ -36,7 +36,7 @@ const storyData = [
   },
   {
     name:
-      "What makes us stand out from the rest is that we have put in place many things to help achieve a complex and speedy wash without one machine touching your vehicle.  Our establishment truly emphasizes the importance of the meaning quality to our staff and detailers.",
+      "What makes us stand out from the rest is that we have put in place many things to help achieve a complex and speedy wash without jeopardizing the quality of the outcome of the service being provided. Our establishment truly emphasizes the importance of the meaning quality to our staff and detailers.",
   },
   {
     name:

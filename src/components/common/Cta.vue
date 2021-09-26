@@ -30,7 +30,7 @@
               <div>
                 <h1 class="text-xl font-semibold uppercase">We are open</h1>
                 <p class="text-base font-normal">
-                  Friday - Thursday, 8am - 6pm
+                  7 Days, 8am - 6pm
                 </p>
               </div>
             </div>
@@ -40,7 +40,7 @@
             >
               <PhoneIcon class="h-9 w-9" />
               <div>
-                <h1 class="text-xl font-semibold uppercase">Call us 24/7</h1>
+                <h1 class="text-xl font-semibold uppercase">Call Us</h1>
                 <a href="tel:(954) 534-9323" class="text-base font-normal">
                   (954) 534-9323
                 </a>

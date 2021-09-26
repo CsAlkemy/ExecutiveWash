@@ -5,8 +5,10 @@
         Subscribe to our Newsletter
       </h1>
       <p class="text-lg font-normal text-center mb-6">
-        Fill out the form and Wash me! will let you know about <br />
-        specials offers, coupons and news.
+        Fill out the form and
+        <span class="font-semibold">Executive Wash & Detail</span> will let you
+        know about <br />
+        special offers, coupons and news.
       </p>
       <div
         class="grid grid-cols-3 gap-x-2 max-w-lg justify-center mx-auto my-10"

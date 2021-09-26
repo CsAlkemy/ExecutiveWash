@@ -42,6 +42,10 @@ const router = createRouter({
   routes,
 });
 
+router.afterEach((to, from, savedPosition) => {
+  return { x: 0, y: 0 };
+});
+
 router.afterEach((to, from) => {
   window.document.title = `${String(to.name)} | Executive Car Wash & Details`;
 });

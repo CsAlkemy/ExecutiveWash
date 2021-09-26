@@ -33,10 +33,10 @@ import {
 const cardData = [
   {
     bgClass: "bg-email",
-    textStyle: "text-2xl md:text-base lg:text-xl",
-    text: "info@executivewashpines.com",
+    textStyle: "text-2xl md:text-xl lg:text-xl",
+    text: "Info@execwash.com",
     icon: MailOpenIcon,
-    link: "mailto:info@executivewashpines.com",
+    link: "mailto:info@execwash.com",
   },
   {
     bgClass: "bg-phone",

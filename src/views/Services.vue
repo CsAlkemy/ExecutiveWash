@@ -23,7 +23,7 @@ import Banner from "@/components/Home/Banner.vue";
 //Page Data
 const HeroData = {
   titleOne: "We Offer Packages",
-  titleTwo: ["With Best", "Price"],
+  titleTwo: ["With Best Price &", "Quality"],
   subtitle: "",
   bgImage: "",
 };

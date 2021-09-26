@@ -17,7 +17,7 @@
               <div class="col-span-2">
                 <img
                   :src="item.img"
-                  class="object-cover w-full h-56 rounded-r-xl"
+                  class="object-cover w-full max-h-64 h-64 rounded-r-xl"
                   alt="bannerer"
                 />
               </div>
@@ -52,23 +52,23 @@ const features = [
   {
     title: "Hand Wash",
     details:
-      "We offer speedy service with our state of the art tunnel wash or you can ask for a VIP Hand Wash Service.",
+      "If you choose to not pass your vehicle through our state of the art wash tunnel, then we offer a no machine friction solution to washing your vehicle. Your vehicle will be washed with only experienced human hands and mitts",
     img: HandWash,
-    link: "/",
+    link: "services",
   },
   {
     title: "Machine Wash",
     details:
-      "We offer speedy service with our state of the art tunnel wash or you can ask for a VIP Hand Wash Service.",
+      "We offer speedy service with our state-of-the-art tunnel wash using nothing but the best microfiber cloth with gentle, environmentally friendly cleaning detergents that are specially formulated for all types of vehicles",
     img: MachineWash,
-    link: "/",
+    link: "services",
   },
   {
     title: "Complete Detail Services",
     details:
-      "From waxing to shampooing, scratch removal to headlight restoration, we do it all. Come on in and visit us now.",
+      "We offer collection of detailing services that cater to all types of vehicles. From waxing to shampooing, scratch removal to headlight restoration, we do it all.",
     img: CompleteWash,
-    link: "/",
+    link: "services",
   },
   {
     title: "Be A VIP Member",

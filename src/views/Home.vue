@@ -22,10 +22,10 @@ import NewsLetter from "@/components/common/NewsLetter.vue";
 import Banner from "@/components/Home/Banner.vue";
 // Data Section
 const HeroData = {
-  titleOne: "Fastest and",
-  titleTwo: ["DETAILED", "CAR WASH"],
+  titleOne: "Executive ",
+  titleTwo: ["Wash and ", "Detail"],
   subtitle:
-    "we are the best car wash on pembroke pines. we know what you want from a car wash",
+    "Best Full Service Car Wash in Pembroke Pines with 2 decades worth of experience",
   bgImage: "bgImageHome object-cover",
 };
 

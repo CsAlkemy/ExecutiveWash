@@ -24,14 +24,9 @@
           </p>
           <div class="flex gap-4 justify-center mt-9">
             <router-link
-              class="p-2 px-4 py-3 text-base font-semibold bg-white rounded-md text-black hover:bg-purple-500 hover:text-white"
+              class="p-2 px-4 py-2 text-base font-semibold hover:bg-purple-500 bg-green-500  rounded-md"
               to="appointment"
               >Appointment</router-link
-            >
-            <a
-              class="p-2 px-4 py-3 text-base font-semibold hover:bg-purple-500 bg-green-500  rounded-md"
-              href=""
-              >Navigate Me</a
             >
           </div>
         </div>

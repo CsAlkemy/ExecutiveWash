@@ -71,7 +71,7 @@
           </h1>
           <p class="text-white text-justify font-normal text-sm">
             Fill out the form and we will let you know about special offers,
-            coupons ann news.
+            coupons and news.
           </p>
           <div
             class="grid grid-cols-1 gap-x-2 my-5 justify-evenly sm:justify-start"
