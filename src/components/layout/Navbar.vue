@@ -2,13 +2,13 @@
   <Popover class="relative bg-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6">
       <div
-        class="flex justify-between items-center py-6 md:justify-start md:space-x-10"
+        class="flex justify-between items-center py-4 md:justify-start md:space-x-10"
       >
         <div class="flex justify-start lg:w-0 lg:flex-1">
           <router-link to="/">
             <span class="sr-only">Workflow</span>
             <img
-              class="h-12 rounded-xl w-auto sm:h-14"
+              class="h-12 rounded-xl w-auto sm:h-14 text-green-500"
               :src="Image"
               alt="logo"
             />
