@@ -1,6 +1,6 @@
 <template>
   <div class="bg-gray-900">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 my-12">
       <div class="pt-14 pb-20 text-white ">
         <h1 class="text-2xl font-medium tracking-tight">
           It's Time to Check Our
@@ -113,9 +113,9 @@
                 </div>
                 <div>
                   <h1
-                    class="text-3xl font-bold uppercase tracking-tighter text-center text-green-500 mt-6"
+                    class="text-3xl font-semibold uppercase tracking-tighter text-center text-green-500 mt-6"
                   >
-                    Member Request
+                    VIP Member Request
                   </h1>
                   <div class="p-5">
                     <form action="">
@@ -221,7 +221,7 @@ export default {
     return {
       features,
       Img: require("@/assets/images/vip.jpg"),
-      ImgPop: require("@/assets/images/vipmem.png"),
+      ImgPop: require("@/assets/images/vipmem.jpg"),
     };
   },
 

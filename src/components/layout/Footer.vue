@@ -1,5 +1,5 @@
 <template>
-  <footer class="bg-gray-900 text-white w-full">
+  <div class="bg-gray-900 text-white w-full">
     <div
       class="max-w-7xl mx-auto px-4 sm:px-6 pt-20 pb-14 divide-y-2 divide-gray-700"
     >
@@ -74,41 +74,42 @@
             coupons and news.
           </p>
           <div
-            class="grid grid-cols-1 gap-x-2 my-5 justify-evenly sm:justify-start"
+            class="grid grid-cols-3 gap-x-2 max-w-lg justify-center mx-auto my-10"
           >
-            <div class="col-span-1">
-              <input
-                type="text"
-                placeholder="Enter your email"
-                class="p-2 text-black placeholder-gray-600 rounded-sm mr-3"
-              />
-              <button
-                class="bg-green-500 text-white p-2 rounded-sm hover:bg-purple-500 font-medium text-base"
-              >
-                Subscribe
-              </button>
-            </div>
+            <input
+              type="text"
+              placeholder="Enter Your Email"
+              class="col-span-2 p-2 placeholder-gray-600  rounded-md text-black "
+            />
+            <button
+              class="col-span-1 p-2 bg-green-500 text-white text-lg font-medium rounded-md hover:bg-purple-500"
+            >
+              Subscribe
+            </button>
           </div>
         </div>
       </div>
       <div class="py-3 pb-10">
         <p class="text-sm text-center">
-          2021 &copy; Executive Wash & Details. By
-          <span
-            class="text-base font-medium hover:bg-green-400 hover:text-gray-900"
-            ><a target="_blank" href="https://bluespaces.netlify.app/"
-              >ZapTwo</a
-            ></span
-          >
+          {{ yearJS }} &copy;
+          <span class="font-semibold">Executive Wash & Details</span>
         </p>
       </div>
     </div>
-  </footer>
+  </div>
 </template>
 
 <script>
+const yearJS = new Date().getFullYear();
+
 export default {
+  name: "footerCom",
   components: {},
+  data() {
+    return {
+      yearJS,
+    };
+  },
 };
 </script>
 

@@ -26,7 +26,7 @@
 
           <div class="flex gap-x-3 mb-7">
             <LocationMarkerIcon class="h-7 w-7" />
-            <a class="text-xl font-medium" href="tel:01524409575">
+            <a class="text-xl font-medium" href="#">
               12351 Nw 18 st Pembork Pines, FL 33026</a
             >
           </div>

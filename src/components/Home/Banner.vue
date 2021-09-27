@@ -1,5 +1,5 @@
 <template>
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 py-9">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 py-9 my-6">
     <img
       :src="Img"
       alt="banner"
@@ -46,9 +46,9 @@
                   </div>
                   <div>
                     <h1
-                      class="text-3xl font-bold uppercase tracking-tighter text-center text-green-500 mt-6"
+                      class="text-3xl font-semibold uppercase tracking-tighter text-center text-green-500 mt-6"
                     >
-                      Member Request
+                      VIP Member Request
                     </h1>
                     <div class="p-5">
                       <form action="">
@@ -126,8 +126,8 @@ export default {
   },
   data() {
     return {
-      Img: require("@/assets/images/banner.png"),
-      ImgPop: require("@/assets/images/vipmem.png"),
+      Img: require("@/assets/images/bannerb.jpg"),
+      ImgPop: require("@/assets/images/vipmem.jpg"),
     };
   },
   setup() {

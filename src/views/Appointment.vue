@@ -19,7 +19,7 @@ const HeroData = {
   titleTwo: ["Make Things", "Easy"],
   subtitle:
     "Choosing car wash is a constant process in the life of every motorist. Entrust your car cleaning to our professional",
-  bgImage: " ",
+  bgImage: "p-3",
 };
 
 export default {

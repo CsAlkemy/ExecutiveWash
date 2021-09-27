@@ -1,13 +1,13 @@
 <template>
   <div class="bg-gray-900  mt-11 text-white">
-    <div class=" bg-blend-multiply bg-no-repeat bg-bigCar bg-right py-20">
+    <div class=" bg-blend-multiply bg-no-repeat bg-bigCar bg-right pt-20 pb-10">
       <div class="clear-right"></div>
       <div class="max-w-7xl mx-auto px-4 sm:px-6">
         <div
           class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-4 mt-0 lg:mt-11"
         >
           <div
-            class="flex-row place-items-start bg-gray-500 opacity-95 rounded-md lg:rounded-none lg:bg-gray-900 p-3  pb-3"
+            class="flex-row place-items-start bg-gray-500 opacity-95 rounded-md lg:rounded-none lg:bg-gray-900 p-3 pb-11 sm:pb-0"
           >
             <h1
               class="text-4xl uppercase font-bold text-white tracking-normal lg:tracking-widest mb-5"

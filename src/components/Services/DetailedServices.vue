@@ -1,5 +1,5 @@
 <template>
-  <div class="max-w-7xl mx-auto px-4 sm:px-6">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 my-12">
     <div class="grid grid-cols-1 md:grid-cols-2 gap-5 ">
       <div v-for="item in data" :key="item.title">
         <div class="mt-16 mb-12">

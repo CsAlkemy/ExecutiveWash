@@ -66,7 +66,12 @@
             <div class="flex items-center justify-between">
               <div>
                 <router-link to="/">
-                  <img class="h-12 w-auto" :src="Image" alt="Workflow" />
+                  <img
+                    class="h-12 w-auto"
+                    :src="Image"
+                    @click="accept(close)"
+                    alt="Workflow"
+                  />
                 </router-link>
               </div>
               <div class="-mr-2">

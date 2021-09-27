@@ -1,5 +1,5 @@
 <template>
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 pt-8 pb-14">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 pt-8 pb-14 my-12">
     <div class="text-black my-12">
       <h1 class="text-2xl font-medium tracking-tight">
         Our Customer
