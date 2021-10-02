@@ -11,6 +11,7 @@
           is-expanded
           is-dark
           :min-date="new Date()"
+          :disabled-dates="{ weekdays: [1, 7] }"
           class="py-5 p-5 my-14"
         />
       </div>
@@ -29,6 +30,7 @@
               :min-date="new Date()"
               v-model="date"
               mode="dateTime"
+              :disabled-dates="{ weekdays: [1, 7] }"
               :minute-increment="30"
               is12hr
               color="green"

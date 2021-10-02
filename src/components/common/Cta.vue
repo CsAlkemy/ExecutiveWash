@@ -14,7 +14,7 @@
             >
               Need Help? <br />
               We are here <br />
-              to help you.
+              For You.
             </h1>
             <router-link
               to="contact"

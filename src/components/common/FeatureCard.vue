@@ -21,11 +21,13 @@
                   alt="bannerer"
                 />
               </div>
-              <div class="col-span-3 p-4 text-black">
-                <h1 class="text-xl font-semibold tracking-tight mb-3">
+              <div :class="item.class" class="col-span-3 p-4 text-black">
+                <h1 class="text-xl font-semibold tracking-tight mb-1">
                   {{ item.title }}
                 </h1>
-                <p class="text-base font-light tracking-wide mb-1">
+                <p
+                  class="text-base font-light mb-1 text-justify tracking-tighter"
+                >
                   {{ item.details }}
                 </p>
                 <router-link
@@ -51,7 +53,7 @@
                 />
               </div>
               <div class="col-span-3 p-4 text-black">
-                <h1 class="text-xl font-semibold tracking-tight mb-3">
+                <h1 class="text-xl font-semibold tracking-tight mb-1">
                   Be A VIP Member
                 </h1>
                 <p class="text-base font-light tracking-wide mb-1">
@@ -188,16 +190,18 @@ const features = [
   {
     title: "Hand Wash",
     details:
-      "If you choose to not pass your vehicle through our state of the art wash tunnel, then we offer a no machine friction solution to washing your vehicle. Your vehicle will be washed with only experienced human hands and mitts",
+      "If you choose NOT to utilize our state-of-the-art wash tunnel, then we offer a no machine friction solution to washing your vehicle. Your vehicle will be washed with only experienced human hands and mitts.",
     img: HandWash,
     link: "services",
+    class: "mb-6",
   },
   {
     title: "Machine Wash",
     details:
-      "We offer speedy service with our state-of-the-art tunnel wash using nothing but the best microfiber cloth with gentle, environmentally friendly cleaning detergents that are specially formulated for all types of vehicles",
+      "We offer speedy service with our state-of-the-art tunnel wash using nothing but the best microfiber cloth with gentle, environmentally friendly cleaning detergents that are specially formulated for all types of vehicles.",
     img: MachineWash,
     link: "services",
+    class: "mb-2",
   },
   {
     title: "Complete Detail Services",
@@ -205,6 +209,7 @@ const features = [
       "We offer collection of detailing services that cater to all types of vehicles. From waxing to shampooing, scratch removal to headlight restoration, we do it all.",
     img: CompleteWash,
     link: "services",
+    class: "",
   },
 ];
 

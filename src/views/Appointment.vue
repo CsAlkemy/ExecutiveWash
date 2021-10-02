@@ -15,10 +15,10 @@ import TestimonialCard from "@/components/common/TestimonialCard.vue";
 import NewsLetter from "@/components/common/NewsLetter.vue";
 
 const HeroData = {
-  titleOne: "Booking Appointment",
-  titleTwo: ["Make Things", "Easy"],
+  titleOne: "Booking an Appointment",
+  titleTwo: ["Makes Things", "Easy"],
   subtitle:
-    "Choosing car wash is a constant process in the life of every motorist. Entrust your car cleaning to our professional",
+    "Choosing the right Car Wash Can Be a Burdensome Process in the Life of Every Motorist. Entrust Your Car Cleaning to Our Professionals.",
   bgImage: "p-3",
 };
 

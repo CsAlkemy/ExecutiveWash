@@ -23,7 +23,7 @@ import Banner from "@/components/Home/Banner.vue";
 // Data Section
 const HeroData = {
   titleOne: "Executive ",
-  titleTwo: ["Wash and ", "Detail"],
+  titleTwo: ["Wash & ", "Detail"],
   subtitle:
     "Best Full Service Car Wash in Pembroke Pines with 2 decades worth of experience",
   bgImage: "bgImageHome object-cover",
