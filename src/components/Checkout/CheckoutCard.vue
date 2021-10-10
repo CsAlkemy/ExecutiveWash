@@ -1,5 +1,7 @@
 <template>
-  <div class="grid grid-cols-1 sm:grid-cols-3  bg-green-500 rounded-lg">
+  <div
+    class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3  bg-green-500 rounded-lg"
+  >
     <div class=" col-span-2 rounded-lg p-8">
       <h1
         class="text-lg font-medium uppercase tracking-tighter mb-4 text-white"
@@ -75,8 +77,30 @@
         </div>
       </div>
     </div>
-    <div class="bg-white rounded-lg p-8">
-      <div class=""></div>
+    <div class="bg-white rounded-lg p-9 -mr-1">
+      <div
+        class="bg-gray-900 p-7 h-52 w-full sm:w-96 lg:w-full mx-auto rounded-2xl "
+      >
+        <div class="flex justify-between mt-4">
+          <img :src="Chip" alt="Card Chip" class="h-7 w-9" />
+          <img :src="CardType" alt="Card Type" />
+        </div>
+      </div>
+
+      <form action="" class="mt-6">
+        <input type="text" placeholder="Cardholder Name" class="form" />
+        <input type="text" placeholder="Card Number" class="form" />
+        <input type="text" placeholder="Expire Date" class="form" />
+        <input type="text" placeholder="CVV" class="form" />
+        <button
+          class="p-2 bg-gray-900 text-center text-white rounded-lg w-full font-semibold mt-5"
+        >
+          Pay Now
+        </button>
+      </form>
+      <div class=" mt-6 justify-center mx-auto">
+        <img :src="CardGroup" alt="" class="mx-auto" />
+      </div>
     </div>
   </div>
 </template>
@@ -93,6 +117,18 @@ export default {
     LocationMarkerIcon,
     MailIcon,
   },
+  data() {
+    return {
+      Chip: require("@/assets/images/Chip.png"),
+      CardType: require("@/assets/images/cardType.png"),
+      CardGroup: require("@/assets/images/CardGroup.png"),
+    };
+  },
 };
 </script>
-<style></style>
+
+<style>
+.form {
+  @apply p-2 border border-gray-400 my-2 rounded-lg w-full;
+}
+</style>
