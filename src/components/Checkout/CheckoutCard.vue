@@ -2,7 +2,7 @@
   <div
     class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3  bg-green-500 rounded-lg"
   >
-    <div class=" col-span-2 rounded-lg p-8">
+    <div class=" col-span-2 rounded-lg p-5 md:p-8">
       <h1
         class="text-lg font-medium uppercase tracking-tighter mb-4 text-white"
       >
@@ -77,7 +77,7 @@
         </div>
       </div>
     </div>
-    <div class="bg-white rounded-lg p-9 -mr-1">
+    <div class="bg-white rounded-lg p-5 md:p-8 -mr-1">
       <div
         class="bg-gray-900 p-7 h-52 w-full sm:w-96 lg:w-full mx-auto rounded-2xl "
       >
@@ -86,7 +86,6 @@
           <img :src="CardType" alt="Card Type" />
         </div>
       </div>
-
       <form action="" class="mt-6">
         <input type="text" placeholder="Cardholder Name" class="form" />
         <input type="text" placeholder="Card Number" class="form" />

@@ -46,6 +46,12 @@
             <li class="hover:text-green-500">
               <routerLink to="appointment">Appointment</routerLink>
             </li>
+            <li class="hover:text-green-500">
+              <routerLink to="checkout">CheckOut</routerLink>
+            </li>
+            <li class="hover:text-green-500">
+              <routerLink to="ratings">Ratings</routerLink>
+            </li>
           </ul>
         </div>
         <div>
