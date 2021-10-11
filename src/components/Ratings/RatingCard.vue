@@ -35,6 +35,41 @@
             <StarIcon class="h-12 w-12 " />
           </div>
         </div>
+
+        <div class="bg-gray-900 pt-9 px-10">
+          <div class="invisible-checkboxes grid grid-cols-2 gap-3">
+            <input type="checkbox" name="rGroup" value="1" id="r1" />
+            <label class="checkbox-alias bg-white p-1 rounded-md px-3" for="r1"
+              >Great!</label
+            >
+            <input type="checkbox" name="rGroup" value="2" id="r2" />
+            <label class="checkbox-alias bg-white p-1 rounded-md px-3" for="r2"
+              >Nice People</label
+            >
+            <input type="checkbox" name="rGroup" value="3" id="r3" />
+            <label
+              class="checkbox-alias col-span-2 bg-white p-1 rounded-md px-3"
+              for="r3"
+              >Professional</label
+            >
+            <input type="checkbox" name="rGroup" value="4" id="r4" />
+            <label class="checkbox-alias bg-white p-1 rounded-md px-3" for="r4"
+              >Supperb Detail</label
+            >
+            <input type="checkbox" name="rGroup" value="5" id="r5" />
+            <label class="checkbox-alias bg-white p-1 rounded-md px-3" for="r5"
+              >Poor!</label
+            >
+            <input type="checkbox" name="rGroup" value="6" id="r6" />
+            <label class="checkbox-alias bg-white p-1 rounded-md px-3" for="r6"
+              >Need Change</label
+            >
+            <input type="checkbox" name="rGroup" value="7" id="r7" />
+            <label class="checkbox-alias bg-white p-1 rounded-md px-3" for="r7"
+              >Great!</label
+            >
+          </div>
+        </div>
         <div class=" py-6 px-10 ">
           <button
             class="p-2  bg-green-500 text-lg font-semibold text-center rounded-sm w-full"
@@ -78,11 +113,19 @@ export default {
   },
 };
 </script>
-<style lang="scss">
+<style scoped>
 .customBg {
   background-color: #aad46f;
 }
-</style>
+.checkbox-alias {
+  transition: all 250ms ease-out;
+}
 
-* I am authorizing you to post my testimonial anywhere online. * . * * I verify
-that have read and agree to the Terms of services
+.invisible-checkboxes input[type="checkbox"] {
+  display: none;
+}
+
+.invisible-checkboxes input[type="checkbox"]:checked + .checkbox-alias {
+  background-color: #3db980;
+}
+</style>
