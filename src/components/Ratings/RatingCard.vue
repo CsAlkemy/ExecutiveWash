@@ -26,13 +26,38 @@
           Thank you for taking your time to <br />
           give us your feedback.
         </p>
-        <div class="bg-gray-200 py-4">
-          <div class="px-10 flex justify-between">
-            <StarIcon class="h-12 w-12 " />
-            <StarIcon class="h-12 w-12 " />
-            <StarIcon class="h-12 w-12 " />
-            <StarIcon class="h-12 w-12 " />
-            <StarIcon class="h-12 w-12 " />
+        <div class="bg-gray-800 py-4">
+          <div class="px-16 flex justify-between">
+            <label class="labl cursor-pointer">
+              <input type="radio" name="radioname" value="one_value" checked />
+              <div class="text-white">
+                <StarIcon class="h-12 w-12 hover:text-green-500" />
+              </div>
+            </label>
+            <label class="labl cursor-pointer">
+              <input type="radio" name="radioname" value="one_value" />
+              <div class="text-white">
+                <StarIcon class="h-12 w-12 hover:text-green-500" />
+              </div>
+            </label>
+            <label class="labl cursor-pointer">
+              <input type="radio" name="radioname" value="one_value" />
+              <div class="text-white">
+                <StarIcon class="h-12 w-12 hover:text-green-500" />
+              </div>
+            </label>
+            <label class="labl cursor-pointer">
+              <input type="radio" name="radioname" value="one_value" />
+              <div class="text-white">
+                <StarIcon class="h-12 w-12 hover:text-green-500" />
+              </div>
+            </label>
+            <label class="labl cursor-pointer">
+              <input type="radio" name="radioname" value="another" />
+              <div class="text-white">
+                <StarIcon class="h-12 w-12 hover:text-green-500" />
+              </div>
+            </label>
           </div>
         </div>
 
@@ -100,7 +125,7 @@
   </div>
 </template>
 <script>
-import { StarIcon } from "@heroicons/vue/outline";
+import { StarIcon } from "@heroicons/vue/solid";
 export default {
   name: "Ratings",
   components: {
@@ -113,6 +138,7 @@ export default {
   },
 };
 </script>
+
 <style scoped>
 .customBg {
   background-color: #aad46f;
@@ -120,12 +146,17 @@ export default {
 .checkbox-alias {
   transition: all 250ms ease-out;
 }
-
 .invisible-checkboxes input[type="checkbox"] {
   display: none;
 }
-
 .invisible-checkboxes input[type="checkbox"]:checked + .checkbox-alias {
   background-color: #3db980;
+}
+.labl > input {
+  visibility: hidden;
+  position: absolute; /* Remove input from document flow */
+}
+.labl > input:checked + div {
+  color: #3db980;
 }
 </style>
